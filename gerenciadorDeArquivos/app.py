@@ -6,3 +6,5 @@ from tkinter.filedialog import askdirectory
 pastaSelecionada = askdirectory()
 print(pastaSelecionada)
 
+# Lista todos os arquivos da pasta
+os.listdir(pastaSelecionada)

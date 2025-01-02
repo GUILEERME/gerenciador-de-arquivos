@@ -15,3 +15,7 @@ for arquivo in listaDeArquivos:
     print(arquivo)
     nomeCompletoArquivo = f"{pastaSelecionada} / {arquivo}"
     print(nomeCompletoArquivo)
+
+# Criar pasta de backup
+pastaBackup = input(" Crie um nome para a pasta e INSIRA O CAMINHO:")
+os.mkdir(pastaBackup)

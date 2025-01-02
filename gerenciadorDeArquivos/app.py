@@ -7,4 +7,11 @@ pastaSelecionada = askdirectory()
 print(pastaSelecionada)
 
 # Lista todos os arquivos da pasta
-os.listdir(pastaSelecionada)
+listaDeArquivos = os.listdir(pastaSelecionada)
+print(listaDeArquivos)
+
+# Percorrer arquivos na pasta
+for arquivo in listaDeArquivos:
+    print(arquivo)
+    nomeCompletoArquivo = f"{pastaSelecionada} / {arquivo}"
+    print(nomeCompletoArquivo)
